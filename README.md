@@ -67,12 +67,10 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 
 - User Authentication
 - FULL Crud for users
-- User table, Posts table (belongs_to: users, 1:m relationship), Comments table(belongs_to: Posts 1:m relationship)
+- Database w/ three tables: Users, Posts table (belongs_to: users, 1:m relationship), Comments table(belongs_to: Posts 1:m relationship)
 - Rails backend defining models
 - React App featuring 8 components
 - minimal CSS Styling
-
-- _etc._
 
 <br>
 
