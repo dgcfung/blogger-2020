@@ -35,7 +35,8 @@ Blogger-2020 will be a re-designed modern version of the "Blogger" app. The Blog
 
 ### Permissions
 
-Digital assets used with full licensing and permission from [Death to Stock Photo](), [Freepik](), and [Unsplash](). Custom digital design and branding by John Lansing. Digital assets stored locally and on [Imgur]().
+N/A, all rights will be reserved to General Assembly and Donald Fung. Will add additional permissions as project progresses if applicable.
+
 
 <br>
 
