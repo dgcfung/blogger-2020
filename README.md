@@ -144,6 +144,9 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 
 > Use this section to display an image of a computer generated ERD model.
 
+![image](https://media.git.generalassemb.ly/user/25138/files/f0daa400-5e40-11ea-9b22-0345d7da9671)
+
+
 #### Endpoints
 
 > Use this section to list a selection of your intended endpoints and their uses. Please list any and all custom-created endpoints.
