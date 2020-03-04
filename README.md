@@ -70,7 +70,7 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 - Database w/ three tables: Users, Posts table (belongs_to: users, 1:m relationship), Comments table(belongs_to: Posts 1:m relationship)
 - Rails backend defining models
 - React App featuring 8 components
-- minimal CSS Styling
+- Basic CSS Styling
 
 <br>
 
@@ -82,9 +82,9 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 | :--------------: | :----------------------------------------- |
 |      React       | _Lorem ipsum dolor sit amet, consectetur._ |
 |   React Router   | _Lorem ipsum dolor sit amet, consectetur._ |
-| React SemanticUI | _Lorem ipsum dolor sit amet, consectetur._ |
-|     Express      | _Lorem ipsum dolor sit amet, consectetur._ |
-|  Express Router  | _Lorem ipsum dolor sit amet, consectetur._ |
+| 	Rails  	   | _Lorem ipsum dolor sit amet, consectetur._ |
+|     Additional   | _Lorem ipsum dolor sit amet, consectetur._ |
+
 
 <br>
 
