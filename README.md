@@ -80,10 +80,10 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
-|      React       | _Lorem ipsum dolor sit amet, consectetur._ |
-|   React Router   | _Lorem ipsum dolor sit amet, consectetur._ |
-| 	Rails  	   | _Lorem ipsum dolor sit amet, consectetur._ |
-|     Additional   | _Lorem ipsum dolor sit amet, consectetur._ |
+|      React       |	Frontend |
+|   React Router   | Set-up Routes for Frontend |
+| 	Rails  	   | Backend setup |
+|     Additional   | As needed|
 
 
 <br>
