@@ -145,9 +145,7 @@ The main feature of the backend will be User Authentication. The built out serve
 
 ## Planning
 
-> You've got a little over a week to reach your Minimum Viable Product. Use these sections to plan out your approach.
-
-<br>
+My plan is to reach MVP by Wednesday March 10th
 
 ### Timeframes
 
