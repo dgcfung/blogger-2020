@@ -92,9 +92,6 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 
 #### Wireframes
 
-![image](https://media.git.generalassemb.ly/user/25138/files/95f48b80-5ed8-11ea-8a99-7c633c37e0b6)
-
-Application Structure
 
 ![image](https://media.git.generalassemb.ly/user/25138/files/14a3f580-5ee6-11ea-9564-f725ba64423d)
 
@@ -140,7 +137,7 @@ Posts Feed
 
 #### Component Hierarchy
 
-> Use this section to show your React components and the data architecture of your app.
+![image](https://media.git.generalassemb.ly/user/25138/files/95f48b80-5ed8-11ea-8a99-7c633c37e0b6)
 
 ![Dummy Link](url)
 
