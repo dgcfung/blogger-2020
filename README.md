@@ -92,6 +92,8 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 
 #### Wireframes
 
+![image](https://media.git.generalassemb.ly/user/25138/files/95f48b80-5ed8-11ea-8a99-7c633c37e0b6)
+
 > Use the Wireframes section to display desktop, tablet and mobile views.
 
 ![Dummy Link](url)
