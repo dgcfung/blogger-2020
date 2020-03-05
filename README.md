@@ -105,7 +105,7 @@ The main feature of the backend will be User Authentication. The built out serve
 
 #### ERD Model
 
-![image](https://media.git.generalassemb.ly/user/25138/files/f0daa400-5e40-11ea-9b22-0345d7da9671)
+![image](https://media.git.generalassemb.ly/user/25138/files/69f4fc80-5f10-11ea-80c7-3e146295fa03)
 
 
 #### Endpoints
