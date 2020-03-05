@@ -90,6 +90,10 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 
 ### MVP Client (Front End)
 
+The frontend will have 8 components of Login, createUser, Profile, Posts, Contact Blogger, About Blogger, Header, and Footer. It take data the Rails backend and parse them onto the page. It will also use React Router to route. Frontend will indicate index or show actions to indicate when a user is logged in or not.
+ 
+The front end will also allow for full CRUD capabilities to create, update, and delete posts. CSS styling will be included for a responsive page to suit mobile and desktop.
+
 #### Wireframes
 
 
@@ -134,9 +138,9 @@ Posts Feed
 
 ### MVP Server (Back End)
 
-#### ERD Model
+The main feature of the backend will be User Authentication. The built out server will use RESTful JSON endpoints with self-created data. The database will include one user table and two additional tables of posts and comments. Users & posts will have a 1:m relationship and posts and comments will have 1:m relationship.
 
-> Use this section to display an image of a computer generated ERD model.
+#### ERD Model
 
 ![image](https://media.git.generalassemb.ly/user/25138/files/f0daa400-5e40-11ea-9b22-0345d7da9671)
 
@@ -145,9 +149,9 @@ Posts Feed
 
 > Use this section to list a selection of your intended endpoints and their uses. Please list any and all custom-created endpoints.
 
-- GET `/api/users`
+- GET `/login`
 	- Index route returning an array of all Users and nested 'Likes'
-- GET `/api/users/:id`
+- GET `/login/signup`
 	- Show route for a user requested by ID
 - POST `/api/users`
 	- Create route for a new user
