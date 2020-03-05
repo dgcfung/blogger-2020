@@ -87,7 +87,7 @@ Posts Feed
 
 |  Component   | State | Description                                                      |
 | :----------: | :---: | :--------------------------------------------------------------- |
-|    Header    |   n   | The header will contain the site title and login status.    |
+|    Header    |   n   | The header will contain the site title and login state info    |
 |    App.js    |   Y   | Component will manage routes for app.    |
 | Contact Us  |   n   | This component will render a page for users to submit feedback on a form.      |
 |   About Blogger   |   y   | This page will render a brief description of Blogger 2020     |
