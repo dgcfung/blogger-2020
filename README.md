@@ -102,10 +102,14 @@ Login & Sign up Page
 
 ![image](https://media.git.generalassemb.ly/user/25138/files/343b1e00-5ee6-11ea-842a-5c442646aaed)
 
-
+Feedback & Profile Page
 ![image](https://media.git.generalassemb.ly/user/25138/files/50d75600-5ee6-11ea-9541-c9f3e9179b53)
 
+Contact Us & About Blogger 2020
+
 ![image](https://media.git.generalassemb.ly/user/25138/files/5cc31800-5ee6-11ea-82c1-1500252a0bc7)
+
+Posts Feed
 
 
 > Use the Wireframes section to display desktop, tablet and mobile views.
