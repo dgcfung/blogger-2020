@@ -109,37 +109,10 @@ Contact Us & About Blogger 2020
 Posts Feed
 
 
-> Use the Wireframes section to display desktop, tablet and mobile views.
-
-![Dummy Link](url)
-
-- Desktop Landing
-
-![Dummy Link](url)
-
-- Desktop Hero
-
-![Dummy Link](url)
-
-- Resource Index
-
-![Dummy Link](url)
-
-- Resource Show
-
-![Dummy Link](url)
-
-- Tablet Resource Index
-
-![Dummy Link](url)
-
-- Mobile Resource Index
-
 #### Component Hierarchy
 
 ![image](https://media.git.generalassemb.ly/user/25138/files/95f48b80-5ed8-11ea-8a99-7c633c37e0b6)
 
-![Dummy Link](url)
 
 #### Component Breakdown
 
@@ -147,11 +120,15 @@ Posts Feed
 
 |  Component   | State | Description                                                      |
 | :----------: | :---: | :--------------------------------------------------------------- |
-|    Header    |   n   | _The header will contain the navigation and logo._               |
-|  Navigation  |   n   | _The navigation will provide a link to each of the pages._       |
-|   Gallery    |   y   | _The gallery will render the posts using cards in flexbox._      |
-| Gallery Card |   n   | _The cards will render the post info via props._                 |
-|    Footer    |   n   | _The footer will show info about me and a link to my portfolio._ |
+|    Header    |   n   | The header will contain the site title and login status.    |
+|    App.js    |   Y   | Component will manage routes for app.    |
+| Contact Us  |   n   | This component will render a page for users to submit feedback on a form.      |
+|   About Blogger   |   y   | This page will render a brief description of Blogger 2020     |
+| Login |   n   | Login Page for Users   |
+| Profile |   n   | Page will render  User profile info    |
+| Posts |   Y  | Page will display user posts |
+| Comments |   Y  | Page will manage comments.   |
+|    Footer    |   n   | The footer will contain copyright info. |
 
 <br>
 
