@@ -1,34 +1,5 @@
 # Blogger-2020-app
 
-# Full Stack Project
-
-> The Project Planning section **should be completed** for your project pitch with instructors.
-> To ensure correct Markdown, we recommend copy/pasting the raw template code from this file and removing/updating the necessary sections.
-
-- [Full Stack Project](#Full-Stack-Project)
-  - [Overview](#Overview)
-    - [Team Members](#Team-Members)
-    - [Team Expectations](#Team-Expectations)
-    - [Permissions](#Permissions)
-  - [MVP](#MVP)
-    - [MVP Goals](#MVP-Goals)
-    - [MVP Libraries](#MVP-Libraries)
-    - [MVP Client (Front End)](#MVP-Client-Front-End)
-      - [Wireframes](#Wireframes)
-      - [Component Hierarchy](#Component-Hierarchy)
-      - [Component Breakdown](#Component-Breakdown)
-      - [Component Estimates](#Component-Estimates)
-    - [MVP Server (Back End)](#MVP-Server-Back-End)
-      - [ERD Model](#ERD-Model)
-      - [Data Heirarchy](#Data-Heirarchy)
-  - [Post-MVP](#Post-MVP)
-  - [Project Delivery](#Project-Delivery)
-  - [Code Showcase](#Code-Showcase)
-  - [Code Issues & Resolutions](#Code-Issues--Resolutions)
-
-
-<br>
-
 ## Overview
 
 Blogger-2020 will be a re-designed modern version of the "Blogger" app. The Blogger-2020 app will include a build out back-end using Rails and allow Full CRUD functionality in adding users. The app will feature 1:m association between users & posts and 1:m association between posts & comments. Users will be able to make blog posts which post to their personal endpoint.
