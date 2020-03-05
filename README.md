@@ -171,10 +171,10 @@ My plan is to reach MVP by Wednesday March 10th
 | ------ | ----------------------------------------- |
 |Mar 4th | project proposal worksheet / psuedocoding |
 |Mar 5th | Project pitch / build out endpoints       |
-|Mar 6th | Build out Back-end & User Authentication  |
+|Mar 6th | Project pitch / build out endpoints	     |
 |Mar 7th | Build out Back-end & User Authentication  |
-|Mar 8th | Front end React App Componenets           |
-|Mar 9th | Front-end React componenets/ begin styling|
+|Mar 8th | Build out Back-end & User Authentication  |
+|Mar 9th | Front-end React componenets/ 	     |
 |Mar 10th| MVP, begin post-MVP  /styling             |
 |Mar 11th| post-MVP                                  |
 |Mar 12th| polishing                                 |
