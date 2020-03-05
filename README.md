@@ -170,8 +170,7 @@ My plan is to reach MVP by Wednesday March 10th
 
 |  Day   | Deliverables                              |
 | ------ | ----------------------------------------- |
-|Mar 4th | project proposal worksheet / psuedocoding |
-|Mar 5th | Project pitch / build out endpoints       |
+|Mar 5th | project proposal worksheet / psuedocoding |
 |Mar 6th | Project pitch / build out endpoints	     |
 |Mar 7th | Build out Back-end & User Authentication  |
 |Mar 8th | Build out Back-end & User Authentication  |
