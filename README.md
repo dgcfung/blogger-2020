@@ -153,11 +153,12 @@ My plan is to reach MVP by Wednesday March 10th
 
 | Task                | Priority | Estimated Time | Actual Time |
 | ------------------- | :------: | :------------: | :---------: |
-| Setup Rails Backend including User Auth  |    H     |     24 hrs      |    TBF    |
+| Setup Rails Backend including User Auth  |    H     |     20 hrs      |    TBF    |
 | Set up routes/end points  |    H     |     8 hrs      |    TBF    |
 | Create CRUD Actions |    H     |     8 hrs      |     TBD     |
 | Front-end React Components w/ Full CRUD |    H     |     16 hrs      |     TBD     |
 | CSS |    M    |     8 hrs      |     TBD     |
+| Unforseen errors & debugging  |    H     |     4 hrs      |    TBF    |
 | TOTAL               |    H      |     64 hrs      |     TBD     |
 
 
