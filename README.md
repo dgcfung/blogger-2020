@@ -150,14 +150,32 @@ The main feature of the backend will be User Authentication. The built out serve
 > Use this section to list a selection of your intended endpoints and their uses. Please list any and all custom-created endpoints.
 
 - GET `/login`
-	- Index route returning an array of all Users and nested 'Likes'
+	- Route to login page
 - GET `/login/signup`
-	- Show route for a user requested by ID
-- POST `/api/users`
+	- Route renders when user clicks to create new account, submission will createa new accounts
+- POST `/profile/:id`
 	- Create route for a new user
-- PUT `/api/users/:id/nominate
+- PUT `/profile/:id
   - Update a user by id to create an association to the ballots table
-
+ - DELETE `/deleted
+  - Deleted user will render page confirming delete
+- GET `/profile/:id/posts
+  - Will render all posts by logged in user
+- PUT `/profile/:id
+  - Update a user by id to create an association to the ballots table
+- GET `/profile/:id/posts
+ - Will render all posts by logged in user
+- POST `/profile/:id/posts/:id
+ - Will create new posts by logged in user
+- PUT `/profile/:id/posts
+ - Will update posts by logged in user
+- DELETE `/profile/:id/posts
+ - Will delete posts by logged in user
+- GET `/about-blogger-2020
+ - Will render info about Blogger 2020
+- GET `/contact-us
+ - Will render form for feedback
+  
 <br>
 
 ***
@@ -174,11 +192,13 @@ The main feature of the backend will be User Authentication. The built out serve
 
 | Task                | Priority | Estimated Time | Actual Time |
 | ------------------- | :------: | :------------: | :---------: |
-| Add Contact Form    |    L     |     3 hrs      |    3 hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |     TBD     |
-| TOTAL               |          |     6 hrs      |     TBD     |
+| Setup Rails Backend including User Auth  |    H     |     24 hrs      |    TBF    |
+| Set up routes/end points  |    H     |     8 hrs      |    TBF    |
+| Create CRUD Actions |    H     |     8 hrs      |     TBD     |
+| Front-end React Components w/ Full CRUD |    H     |     16 hrs      |     TBD     |
+| CSS |    M    |     8 hrs      |     TBD     |
+| TOTAL               |    H      |     64 hrs      |     TBD     |
 
-> _Why is this necessary? Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evalute possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe._
 
 <br>
 
@@ -189,12 +209,12 @@ The main feature of the backend will be User Authentication. The built out serve
 |  Day   | Deliverables                              |
 | ------ | ----------------------------------------- |
 |Mar 4th | project proposal worksheet / psuedocoding |
-|Mar 5th | project pitch / build out endpoints       |
-|Mar 6th | Build out front-end components            |
-|Mar 7th | OFF                                       |
-|Mar 8th | impliment user auth                       |
-|Mar 9th | styling                                   |
-|Mar 10th| MVP, begin post-MVP                       |
+|Mar 5th | Project pitch / build out endpoints       |
+|Mar 6th | Build out Back-end & User Authentication  |
+|Mar 7th | Build out Back-end & User Authentication  |
+|Mar 8th | Front end React App Componenets           |
+|Mar 9th | Front-end React componenets/ begin styling|
+|Mar 10th| MVP, begin post-MVP  /styling             |
 |Mar 11th| post-MVP                                  |
 |Mar 12th| polishing                                 |
 |Mar 13th| final presentations                       |
@@ -205,7 +225,11 @@ The main feature of the backend will be User Authentication. The built out serve
 
 ## Post-MVP
 
-> Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
+Post MVP ideas:
+
+- Allow users to follow each other in m:m relationship
+- Allow users to LIKE/DISLIKE POSTS
+- Randomized random feed
 
 <br>
 
