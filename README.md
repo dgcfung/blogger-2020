@@ -59,21 +59,7 @@ The front end will also allow for full CRUD capabilities to create, update, and 
 
 #### Wireframes
 
-
-![image](https://media.git.generalassemb.ly/user/25138/files/14a3f580-5ee6-11ea-9564-f725ba64423d)
-
-Login & Sign up Page
-
-![image](https://media.git.generalassemb.ly/user/25138/files/343b1e00-5ee6-11ea-842a-5c442646aaed)
-
-Feedback & Profile Page
-![image](https://media.git.generalassemb.ly/user/25138/files/50d75600-5ee6-11ea-9541-c9f3e9179b53)
-
-Contact Us & About Blogger 2020
-
-![image](https://media.git.generalassemb.ly/user/25138/files/5cc31800-5ee6-11ea-82c1-1500252a0bc7)
-
-Posts Feed
+![image](https://media.git.generalassemb.ly/user/25138/files/0a99f980-5faf-11ea-8101-2593fc44ab84)
 
 
 #### Component Hierarchy
