@@ -105,29 +105,29 @@ The main feature of the backend will be User Authentication. The built out serve
 - GET `/login`
 	- Route to login page
 - GET `/login/signup`
-	- Route renders when user clicks to create new account, submission will create new accounts
+	- Route returns when user clicks to create new account, submission will create new accounts
 - GET `/posts/:user_id`
-	- Route renders when user's post history
+	- Route returnss when user's post history
 - POST `/posts/:user_id/create`
-	- Route renders when user's clicks to create new post
+	- Route returnss when user's clicks to create new post
 - PUT `/posts/:user_id/edit/:post_id`
-	- Route renders to edit post.
+	- Route returns to edit post.
 - POST `/posts/:user_id/comment/:comment_id`
-	- Route renders when user's clicks to create new comment
+	- Route returns when user's clicks to create new comment
 - PUT `/posts/:user_id/:post_id/comment/:comment_id`
-	- Route renders when user clicks to edit existing comment.
+	- Route returns when user clicks to edit existing comment.
 - GET `/profile/:user_id`
-	- Route renders user's profile
+	- Route returnss user's profile
 - PUT `/profile/:user_id/edit`
-	- Route renders when user wishes to edit profile
+	- Route returns when user wishes to edit profile
 - GET `/posts/:user_id/:post_id`
-	- Route renders when a single post on its own page.
+	- Route returns when a single post on its own page.
 - DELETE `/posts/:user_id/
-	- Route renders to post delete.
+	- Route returns to post delete.
 - DELETE `/posts/:user_id/comment/comment_id`
-	- Route renders after comment delete.
+	- Route returns after comment delete.
 - DELETE `/profile/user_id`
-	- Route renders when a user deletes user account.
+	- Route returns when a user deletes user account.
 	
   
 <br>
