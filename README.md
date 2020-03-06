@@ -100,26 +100,26 @@ The main feature of the backend will be User Authentication. The built out serve
 #### Endpoints
 
 
-- GET `/login`
-	- Route to login page
-- GET `/login/signup`
-	- Route returns when user clicks to create new account, submission will create new accounts
+- POST `/login/signup`
+	- Route submission will create new accounts
+- POST `/login/sign_in
+	- Rout to sign in a user
 - GET `/posts/:user_id`
 	- Route returns all posts by user
-- POST `/posts/:user_id/create`
-	- Route returnss when user's clicks to create new post
+- POST `/posts/:user_id`
+	- Route returns when user's clicks to create new post
 - PUT `/posts/:user_id/edit/:post_id`
-	- Route returns to edit post.
-- POST `/posts/:user_id/comment/:comment_id`
+	- Route to edit post.
+- POST `/posts/:user_id/comment`
 	- Route returns when user's clicks to create new comment
 - PUT `/posts/:user_id/:post_id/comment/:comment_id`
-	- Route returns when user clicks to edit existing comment.
+	- Route when user clicks to edit existing comment.
 - GET `/profile/:user_id`
 	- Route returnss user's profile
 - PUT `/profile/:user_id/edit`
 	- Route returns when user wishes to edit profile
 - GET `/posts/:user_id/:post_id`
-	- Route returns when a single post on its own page.
+	- Route returns a single post on its own page.
 - DELETE `/posts/:user_id/
 	- Route returns to post delete.
 - DELETE `/posts/:user_id/comment/comment_id`
