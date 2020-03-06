@@ -27,7 +27,7 @@ The front end will also allow for full CRUD capabilities to create, update, and 
 
 ### MVP Goals
 
-The MVP goal of my site is to allow users to sign up & login. Once a user has created an account they will be able to create/edit/delete posts. The user will have a feed of other users posts. Furthermore, they will be able to comment on others posts in their feed.
+The MVP goal of my site is to allow users to sign up & login. Once a user has created an account they will be able to create/edit/delete posts. The user will have a feed of other users posts. Furthermore, they will be able to comment on others posts in their feed. Other basic requirements include:
 
 - User Authentication
 - FULL Crud for users
@@ -102,8 +102,6 @@ The main feature of the backend will be User Authentication. The built out serve
 
 > Use this section to list a selection of your intended endpoints and their uses. Please list any and all custom-created endpoints.
 
-- GET `/`
-	- Route to About Blogger landing page
 - GET `/login`
 	- Route to login page
 - GET `/login/signup`
