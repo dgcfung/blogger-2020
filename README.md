@@ -116,9 +116,9 @@ The main feature of the backend will be User Authentication. The built out serve
 	- Route when user clicks to edit existing comment.
 - GET `/profile/:user_id`
 	- Route returnss user's profile
-- PUT `/profile/:user_id/edit`
+- PUT `/profile/edit`
 	- Route returns when user wishes to edit profile
-- GET `/posts/:user_id/:post_id`
+- GET `/posts/post_id`
 	- Route returns a single post on its own page.
 - DELETE `/posts/:user_id/
 	- Route returns to post delete.
