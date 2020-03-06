@@ -99,14 +99,13 @@ The main feature of the backend will be User Authentication. The built out serve
 
 #### Endpoints
 
-> Use this section to list a selection of your intended endpoints and their uses. Please list any and all custom-created endpoints.
 
 - GET `/login`
 	- Route to login page
 - GET `/login/signup`
 	- Route returns when user clicks to create new account, submission will create new accounts
 - GET `/posts/:user_id`
-	- Route returnss when user's post history
+	- Route returns all posts by user
 - POST `/posts/:user_id/create`
 	- Route returnss when user's clicks to create new post
 - PUT `/posts/:user_id/edit/:post_id`
@@ -156,7 +155,6 @@ My plan is to reach MVP by Wednesday March 10th
 
 ### Schedule
 
-> Use this section to look at your project week and plan out when and what you want to do.
 
 |  Day   | Deliverables                              |
 | ------ | ----------------------------------------- |
