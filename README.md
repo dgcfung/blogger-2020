@@ -148,7 +148,7 @@ My plan is to reach MVP by Wednesday March 10th
 | Create CRUD Actions |    H     |     8 hrs      |     TBD     |
 | Front-end React Components w/ Full CRUD |    H     |     16 hrs      |     TBD     |
 | CSS |    M    |     8 hrs      |     TBD     |
-| Unforseen errors & debugging  |    H     |     4 hrs      |    TBF    |
+| Unforseen errors & debugging  |    H     |     4 hrs      |    TBD    |
 | TOTAL               |    H      |     64 hrs      |     TBD     |
 
 
