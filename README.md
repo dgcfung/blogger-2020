@@ -8,7 +8,6 @@ Blogger-2020 will be a re-designed modern version of the "Blogger" app. The Blog
 
 N/A, all rights will be reserved to General Assembly and Donald Fung. Will add additional permissions as project progresses if applicable.
 
-
 <br>
 
 ## MVP
@@ -33,7 +32,7 @@ The front end will also allow for full CRUD capabilities to create, update, and 
 - Database w/ three tables: Users, Posts table (belongs_to: users, 1:m relationship), Comments table(belongs_to: Posts 1:m relationship)
 - Rails backend defining models
 - React App featuring 8 components
-- Basic CSS Styling
+- CSS Styling
 
 <br>
 
@@ -46,7 +45,8 @@ The front end will also allow for full CRUD capabilities to create, update, and 
 |      React       |	Frontend |
 |   React Router   | Set-up Routes for Frontend |
 | 	Rails  	   | Backend setup |
-|     Additional   | As needed|
+| 	Axios  	   | Used to access backend API |
+|     Additional   | Will be added as needed|
 
 
 <br>
@@ -73,15 +73,16 @@ The front end will also allow for full CRUD capabilities to create, update, and 
 
 |  Component   | State | Description                                                      |
 | :----------: | :---: | :--------------------------------------------------------------- |
-|    Header    |   n   | The header will contain the site title and user state info    |
-|    App.js    |   Y   | Component will manage routes for app hold user login state.    |
-| Contact Us  |   n   | This component will render a page for users to submit feedback on a form.      |
-|   About Blogger   |   y   | This page will render a brief description of Blogger 2020     |
-| Login |   n   | Login Page for Users   |
-| Profile |   n   | Page will render  User profile info    |
-| Posts |   Y  | Page will display user posts |
-| Comments |   Y  | Page will manage comments.   |
+|    Header    |   n   | The header will contain the site title and links to About Blogger & Profile|
 |    Footer    |   n   | The footer will contain copyright info. |
+|   About Blogger   |   y   | Landing page with links to Sign Up/Sing In   |
+|    App    |   Y   | Component will manage routes for app hold user login state.  |
+| Sign up  |   n   | This component will allow users to sign up for app  |
+| Login |   n   | Login Page for Users  |
+| Profile |   n   | Page will render  User profile info    |
+| Posts |   Y  | Page will display user posts and Full CRUD |
+| Comments |   Y  | Page will manage comments Full CRUD|
+
 
 <br>
 
@@ -98,32 +99,27 @@ The main feature of the backend will be User Authentication. The built out serve
 
 > Use this section to list a selection of your intended endpoints and their uses. Please list any and all custom-created endpoints.
 
+- GET `/`
+	- Route to About Blogger landing page
 - GET `/login`
 	- Route to login page
 - GET `/login/signup`
-	- Route renders when user clicks to create new account, submission will createa new accounts
-- POST `/profile/:id`
+	- Route renders when user clicks to create new account, submission will create new accounts
+- GET `/posts/:user_id`
+	- Route renders when user's post history
+- POST `/posts/:user_id/create`
+	- Route renders when user's clicks to create new post
+- PUT `/posts/:user_id/edit/:post_id`
 	- Create route for a new user
-- PUT `/profile/:id
-  - Update a user by id to create an association to the ballots table
- - DELETE `/deleted
-  - Deleted user will render page confirming delete
-- GET `/profile/:id/posts
-  - Will render all posts by logged in user
-- PUT `/profile/:id
-  - Update a user by id to create an association to the ballots table
-- GET `/profile/:id/posts
- - Will render all posts by logged in user
-- POST `/profile/:id/posts/:id
- - Will create new posts by logged in user
-- PUT `/profile/:id/posts
- - Will update posts by logged in user
-- DELETE `/profile/:id/posts
- - Will delete posts by logged in user
-- GET `/about-blogger-2020
- - Will render info about Blogger 2020
-- GET `/contact-us
- - Will render form for feedback
+- POST `/posts/:user_id/create-comment/:comment_id`
+	- Route renders when user's clicks to create new comment
+- PUT `/posts/:user_id/:post_id/edit-comment/:comment_id`
+	- Route renders when user clicks to edit existing comment.
+- GET `/profile/:user_id`
+	- Route renders user's profile
+- PUT `/profile/:user_id/edit`
+	- Route renders when user wishes to edit profile
+	
   
 <br>
 
@@ -161,8 +157,8 @@ My plan is to reach MVP by Wednesday March 10th
 |Mar 7th | Build out Back-end & User Authentication  |
 |Mar 8th | Build out Back-end & User Authentication  |
 |Mar 9th | Front-end React componenets/ 	     |
-|Mar 10th| MVP, begin post-MVP  /styling             |
-|Mar 11th| post-MVP                                  |
+|Mar 10th| MVP, begin post-MVP              |
+|Mar 11th| Styling                                  |
 |Mar 12th| polishing                                 |
 |Mar 13th| final presentations                       |
 
@@ -174,10 +170,12 @@ My plan is to reach MVP by Wednesday March 10th
 
 Post MVP ideas:
 
-- Allow users to follow each other in m:m relationship
 - Allow users to LIKE/DISLIKE POSTS
 - Randomized random feed
 
+Low Priority Post MVP
+
+- Allow users to follow each other in m:m relationship
 <br>
 
 ***
