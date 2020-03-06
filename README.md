@@ -27,14 +27,13 @@ The front end will also allow for full CRUD capabilities to create, update, and 
 
 ### MVP Goals
 
-The MVP goal of my site is to allow users to sign up & login. Once a user has created an account they will be able to create/edit/delete posts. The user will have a feed of other users posts. Furthermore, they will be able to comment on others posts in their feed. Other basic requirements include:
+The MVP goal of my site is to allow users to sign up & login. Once a user has created an account they will be able to create/edit/delete posts. The user will have a feed of other users posts. Furthermore, they will be able to comment on others posts. To briefly summarize:
 
-- User Authentication
-- FULL Crud for users
-- Database w/ three tables: Users, Posts table (belongs_to: users, 1:m relationship), Comments table(belongs_to: Posts 1:m relationship)
-- Rails backend defining models
-- React App featuring 8 components
-- CSS Styling
+- User Authentication: Ability to login/logout of accounts
+- Ability to create/edit/delete User Accounts
+- Abilty to edit profile info
+- Ability to to create/edit/delete posts
+- Ability to create/edit/delete comments
 
 
 <br>
