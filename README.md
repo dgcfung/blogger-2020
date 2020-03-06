@@ -111,9 +111,9 @@ The main feature of the backend will be User Authentication. The built out serve
 	- Route renders when user's clicks to create new post
 - PUT `/posts/:user_id/edit/:post_id`
 	- Route renders to edit post.
-- POST `/posts/:user_id/create-comment/:comment_id`
+- POST `/posts/:user_id/comment/:comment_id`
 	- Route renders when user's clicks to create new comment
-- PUT `/posts/:user_id/:post_id/edit-comment/:comment_id`
+- PUT `/posts/:user_id/:post_id/comment/:comment_id`
 	- Route renders when user clicks to edit existing comment.
 - GET `/profile/:user_id`
 	- Route renders user's profile
@@ -121,11 +121,11 @@ The main feature of the backend will be User Authentication. The built out serve
 	- Route renders when user wishes to edit profile
 - GET `/posts/:user_id/:post_id`
 	- Route renders when a single post on its own page.
-- DELETE `/posts/:user_id/`
+- DELETE `/posts/:user_id/
 	- Route renders to post delete.
-- DELETE `/posts/:user_id/`
+- DELETE `/posts/:user_id/comment/comment_id`
 	- Route renders after comment delete.
-- DELETE `/`
+- DELETE `/profile/user_id`
 	- Route renders when a user deletes user account.
 	
   
