@@ -64,7 +64,7 @@ The front end will also allow for full CRUD capabilities to create, update, and 
 
 #### Component Hierarchy
 
-![image](https://media.git.generalassemb.ly/user/25138/files/95f48b80-5ed8-11ea-8a99-7c633c37e0b6)
+![image](https://media.git.generalassemb.ly/user/25138/files/1be30600-5faf-11ea-8762-249ff9d0f8bb)
 
 
 #### Component Breakdown
@@ -91,7 +91,7 @@ The main feature of the backend will be User Authentication. The built out serve
 
 #### ERD Model
 
-![image](https://media.git.generalassemb.ly/user/25138/files/69f4fc80-5f10-11ea-80c7-3e146295fa03)
+![image](https://media.git.generalassemb.ly/user/25138/files/23a2aa80-5faf-11ea-9e84-0b215f5e804f)
 
 
 #### Endpoints
