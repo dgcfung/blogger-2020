@@ -119,6 +119,8 @@ The main feature of the backend will be User Authentication. The built out serve
 	- Route renders user's profile
 - PUT `/profile/:user_id/edit`
 	- Route renders when user wishes to edit profile
+- GET `/posts/:user_id/:post_id`
+	- Route renders when a single post on its own page.
 	
   
 <br>
