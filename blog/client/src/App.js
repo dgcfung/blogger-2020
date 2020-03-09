@@ -4,7 +4,8 @@ import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header'
 import Footer from './components/Footer'
-import AboutBlogger from './components/AboutBlogger'
+import About from './components/About'
+import SignIn from './components/SignIn'
 
 
 function App() {
@@ -13,7 +14,9 @@ function App() {
 
         {/* render routes here */}
         <Header/>
-        <Route exact path="/" component={AboutBlogger}/>
+        <Route exact path="/" component={About}/>
+        <Route exact path="/login/sign_in" component= {SignIn}/>
+        
         <Footer/>
       </React.Fragment>
   );
