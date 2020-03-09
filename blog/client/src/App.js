@@ -8,8 +8,13 @@ import About from './components/About'
 import SignIn from './components/SignIn'
 import SignUp from './components/SignUp'
 
+// import {createUser}
 
-function App() {
+
+class App extends Component {
+
+
+
   return (
       <React.Fragment>
 
@@ -17,8 +22,7 @@ function App() {
         <Header/>
         <Route exact path="/" component={About}/>
         <Route exact path="/login/sign_in" component= {SignIn}/>
-
-        <Route exact path="/login/signup" component= {SignUp}/>
+       <Route exact path="/login/signup" component= {SignUp}/>
         
         <Footer/>
       </React.Fragment>
