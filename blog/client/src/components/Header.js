@@ -42,6 +42,7 @@ handleClickOutside = event => {
           {this.state.open && (
           <div class="dropdown" onClick={this.handleButtonClick}>
             <ul>
+               <li>About Us</li>
               <li>About Us</li>
               <li>Profile</li>
               <li>Posts</li>
