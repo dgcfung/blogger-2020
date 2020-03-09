@@ -7,7 +7,7 @@ class AboutBlogger extends React.Component{
         return (
             <h1>About Blogger</h1>
 
-            // <button className="button">Sign Up</button>
+            <button className="button">Sign Up</button>
         )
     }
 
