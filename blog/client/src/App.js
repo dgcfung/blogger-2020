@@ -6,6 +6,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import About from './components/About'
 import SignIn from './components/SignIn'
+import SignUp from './components/SignUp'
 
 
 function App() {
@@ -16,6 +17,8 @@ function App() {
         <Header/>
         <Route exact path="/" component={About}/>
         <Route exact path="/login/sign_in" component= {SignIn}/>
+
+        <Route exact path="/login/signup" component= {SignUp}/>
         
         <Footer/>
       </React.Fragment>

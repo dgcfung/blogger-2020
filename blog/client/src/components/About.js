@@ -12,6 +12,8 @@ class About extends React.Component{
 
            
                <Link to="/login/sign_in">Sign In</Link>
+
+               <Link to="/login/signup">Sign Up</Link>
                </div>
 
         

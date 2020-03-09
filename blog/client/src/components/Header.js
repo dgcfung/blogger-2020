@@ -43,9 +43,10 @@ handleClickOutside = event => {
           <div class="dropdown" onClick={this.handleButtonClick}>
             <ul>
               <li>About Us</li>
-              <li>Option 2</li>
-              <li>Option 3</li>
-              <li>Option 4</li>
+              <li>Profile</li>
+              <li>Posts</li>
+              <li>New Post</li>
+              <li>Feed</li>
             </ul>
           </div>
            )}
