@@ -7,6 +7,8 @@ import Footer from './components/Footer'
 import About from './components/About'
 import SignIn from './components/SignIn'
 import SignUp from './components/SignUp'
+import Profile from './components/Profile'
+import Posts from './components/Posts'
 
 import {
   registerUser,
@@ -103,6 +105,8 @@ render () {
         <Route exact path="/login/signup">
           <SignUp email={email} password={password} handleChange={this.handleChange} handleSubmit={this.handleSignUp}/>
         </Route>
+        <Route exact path="/profile/:user_id" component={Profile}/>
+        <Route exact path="/posts/:user_id" component={Posts}/>
         
         <Footer/>
       </React.Fragment>
