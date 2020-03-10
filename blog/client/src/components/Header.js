@@ -34,17 +34,23 @@ handleClickOutside = event => {
   render() {
     return (
       <div className="App">
+       
         <div className="container" ref= {this.container}>
-        <h1>Blogger 2020</h1>
+
+       
+       
+       
+        
           <button type="button" class="button" onClick= {this.handleButtonClick}>
             ☰
           </button>
+          <h1 className = "blogger-header">Blogger 2020</h1>
           {this.state.open && (
           <div class="dropdown" onClick={this.handleButtonClick}>
             <ul>
               <Link style={{ textDecoration: 'none' }} to="/"><li>About Blogger 2020</li></Link>
-              <Link style={{ textDecoration: 'none' }} to="/profile"><li>Profile</li></Link>
-              <Link style={{ textDecoration: 'none' }} to="/posts/user_id"><li>Posts</li></Link>
+              <Link style={{ textDecoration: 'none' }} to="/profile/:user_id"><li>Profile</li></Link>
+              <Link style={{ textDecoration: 'none' }} to="/posts/:user_id"><li>Posts</li></Link>
               {/* <Link style={{ textDecoration: 'none' }} to="/posts/user_id"><li>New Post</li></Link> */}
                {/* <li>About Us</li>
               <li>About Us</li>
@@ -53,10 +59,13 @@ handleClickOutside = event => {
               <li>New Post</li>
               <li>Feed</li> */}
             </ul>
+            
           </div>
+         
            )}
-        </div>
-       
+          
+
+        </div> 
       </div>
     );
 

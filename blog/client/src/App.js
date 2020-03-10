@@ -8,9 +8,11 @@ import About from './components/About'
 import SignIn from './components/SignIn'
 import SignUp from './components/SignUp'
 import Profile from './components/Profile'
-import editProfile from './components/EditProfile'
 import Posts from './components/Posts'
 import UserPosts from './components/UserPosts'
+import CreateNewPost from './components/CreateNewPost'
+import Comment from './components/Comment'
+import CreateComment from './components/createComment'
 
 import {
   registerUser,
@@ -109,10 +111,12 @@ render () {
           <SignUp email={email} password={password} handleChange={this.handleChange} handleSubmit={this.handleSignUp}/>
         </Route>
         <Route exact path="/profile/:user_id" component={Profile}/>
-        <Route exact path= "/profile/edit/:user_id" component={EditProfile}/>
+        <Route exact path= "/profile/:user_id/edit" component={EditProfile}/>
         <Route exact path="/posts/:user_id/:post_id" component={Posts}/>
+        <Route exact path= "/posts/create/:user_id" component={CreateNewPost}/>
         <Route exact path="/posts/:user_id" component={UserPosts}/>
-        
+        <Route exact path="/posts/:user_id" component= {Comment}/>
+        <Route exact path="/posts/comments/create/:user_id" component= {CreateComment}/>
         <Footer/>
       </React.Fragment>
   );
