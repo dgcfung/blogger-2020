@@ -1,34 +1,27 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
-class SignIn extends React.Component{
-    render(){
+function SignIn(props){
         return(
             <div>
             <h1>Sign In</h1> 
-            {/* <hr />
+            <hr />
 
-            <form onSubmit= {(e)=>{
-                e.preventDefault();
-                this.props.handleLogin();
-
-            }}>
+            <form onChange= {props.handleChange}
+            onSubmit={props.handleSubmit}>
             <p>Email:</p>
-            <input name ="email" type= "text" value={this.props.formData.email} onChange={this.props.handleChange}/>
+            <input name ="email" type= "text" value={props.email}/>
             <p>Password:</p>
-            <input name="password" type= "password" value={this.props.FormData.password} onChange= {this.props.handleChange}/>
+            <input name="password" type= "password" value={props.password} />
             <hr/>
             <button>Sign In</button>
             <Link to="/login/signup">Sign Up</Link>
             
 
 
-            </form> */}
+            </form>
             </div>
-        )
-
-    }
-
+    )
 }
 
 export default SignIn

@@ -1,15 +1,16 @@
 import axios from 'axios'
-import App from './src/App'
+import App from './App'
 
-const baseURL = 'localhost:3000'
+const baseURL = 'http://localhost:3000'
 
 // user create, CRUD'
 const api= axios.create({
-    baseURL: baseUrl
+    baseURL: baseURL
 })
 
 
 export const loginUser = async (loginData) => {
+  console.log('here')
     const resp = await api.post('/auth/login', loginData)
     localStorage.setItem('authToken', resp.data.token);
     api.defaults.headers.common.authorization = `Bearer ${resp.data.token}`
@@ -42,8 +43,8 @@ export const loginUser = async (loginData) => {
       const resp= await api.get('/users')
   }
 
-  const updateUser= async()=>{
-      const resp= await api.put(`/users/${id}`,{teacher:data})
+  const updateUser= async(data)=>{
+      const resp= await api.put(`/users`,{user:data})
       return resp.data
   }
 
@@ -52,13 +53,13 @@ export const loginUser = async (loginData) => {
       return resp.data
   }
 
-  const createPost= async(data)=>{
+  const createPost= async(id)=>{
       const resp= await api.post(`posts/${id}`)
       return resp.data
   }
 
-  const readAllUserPosts= async()=>{
-      const resp= await api.get(   `/posts/${id}`)
+  const readAllUserPosts= async(id)=>{
+      const resp= await api.get( `/posts/${id}`)
       return resp.data
   }
 
@@ -69,25 +70,23 @@ export const loginUser = async (loginData) => {
   }
 
 //   check route
-  const updatePost= async()=>{
-      const resp= await api.post(`/posts/${id}/edit/${id}`)
+  const updatePost= async(user_id, post_id)=>{
+      const resp= await api.post(`/posts/${user_id}/edit/${post_id}`)
       return resp.data
   }
 
-  const destroyPost= async()=>{
+  const destroyPost= async(id)=>{
       const resp= await api.delete(`/posts/${id}`)
       return resp.data
   }
 
 
   export{
-      createUser,
       readAllUsers,
       updateUser,
       destroyUser,
       createPost,
       readAllUserPosts,
-      readAllUsers,
       readAllPosts,
       updatePost,
       destroyPost
