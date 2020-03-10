@@ -8,7 +8,9 @@ import About from './components/About'
 import SignIn from './components/SignIn'
 import SignUp from './components/SignUp'
 import Profile from './components/Profile'
+import EditProfile from './components/EditProfile';
 import Posts from './components/Posts'
+import EditPost from './components/EditPost'
 import UserPosts from './components/UserPosts'
 import CreateNewPost from './components/CreateNewPost'
 import Comment from './components/Comment'
@@ -26,7 +28,7 @@ import {
   updatePost,
   destroyPost
 } from './api-helper'
-import EditProfile from './components/EditProfile';
+
 
 
 class App extends React.Component {
@@ -116,7 +118,7 @@ render () {
         <Route exact path= "/posts/create/:user_id" component={CreateNewPost}/>
         <Route exact path="/posts/:user_id" component={UserPosts}/>
         <Route exact path="/posts/:user_id" component= {Comment}/>
-        <Route exact path="/posts/comments/create/:user_id" component= {CreateComment}/>
+        <Route exact path= "/posts/comments/create/:user_id" component= {CreateComment}/>
         <Footer/>
       </React.Fragment>
   );

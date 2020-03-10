@@ -49,8 +49,8 @@ handleClickOutside = event => {
           <div class="dropdown" onClick={this.handleButtonClick}>
             <ul>
               <Link style={{ textDecoration: 'none' }} to="/"><li>About Blogger 2020</li></Link>
-              <Link style={{ textDecoration: 'none' }} to="/profile/:user_id"><li>Profile</li></Link>
-              <Link style={{ textDecoration: 'none' }} to="/posts/:user_id"><li>Posts</li></Link>
+              <Link style={{ textDecoration: 'none' }} to="/profile"><li>Profile</li></Link>
+              <Link style={{ textDecoration: 'none' }} to="/posts"><li>Posts</li></Link>
               {/* <Link style={{ textDecoration: 'none' }} to="/posts/user_id"><li>New Post</li></Link> */}
                {/* <li>About Us</li>
               <li>About Us</li>
