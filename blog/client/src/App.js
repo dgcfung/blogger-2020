@@ -8,7 +8,9 @@ import About from './components/About'
 import SignIn from './components/SignIn'
 import SignUp from './components/SignUp'
 import Profile from './components/Profile'
+import editProfile from './components/EditProfile'
 import Posts from './components/Posts'
+import UserPosts from './components/UserPosts'
 
 import {
   registerUser,
@@ -22,6 +24,7 @@ import {
   updatePost,
   destroyPost
 } from './api-helper'
+import EditProfile from './components/EditProfile';
 
 
 class App extends React.Component {
@@ -106,7 +109,9 @@ render () {
           <SignUp email={email} password={password} handleChange={this.handleChange} handleSubmit={this.handleSignUp}/>
         </Route>
         <Route exact path="/profile/:user_id" component={Profile}/>
-        <Route exact path="/posts/:user_id" component={Posts}/>
+        <Route exact path= "/profile/edit/:user_id" component={EditProfile}/>
+        <Route exact path="/posts/:user_id/:post_id" component={Posts}/>
+        <Route exact path="/posts/:user_id" component={UserPosts}/>
         
         <Footer/>
       </React.Fragment>

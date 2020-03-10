@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 function Profile (props){
     console.log(props)
@@ -12,6 +13,7 @@ return(
         <p>Location:</p>
         <p>Gender:</p>
         <p>Interests:</p>
+        <Link to="/profile/user_id/edit">Edit Profile Info</Link>
         
     </div>
 

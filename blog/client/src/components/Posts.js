@@ -6,7 +6,7 @@ function Posts (props){
     return(
         <div>
             <h1>Posts</h1>
-{/* for each for all posts for each */}
+
         </div>
     )
 }
