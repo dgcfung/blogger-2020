@@ -22,8 +22,8 @@ return(
         
         <h1>Profile</h1>
         {id}
-<p>Email: {user.email}</p>
-<p>Age: {user.age}</p>
+    <p>Email: {user.email}</p>
+    <p>Age: {user.age}</p>
         <p>Location: {user.location}</p>
         <p>Gender: {user.gender}</p>
         <p>Interests: {user.interests}:</p>

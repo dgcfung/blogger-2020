@@ -86,7 +86,7 @@ handleSignUp = async(e)=>{
 e.preventDefault()
 let res = await registerUser(this.state.authFormData)
 console.log(res)
-
+this.props.history.push(`/`)
 }
 
 handleSignIn = async(e)=>{
