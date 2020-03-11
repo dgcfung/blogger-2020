@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
-  before_action :set_user, only: [:show, :update, :destroy]
+  before_action :set_user, only: [:show, :destroy]
+  before_action :authorize_request, only: [:update]
 
   # GET /users
   def index
@@ -24,12 +25,13 @@ class UsersController < ApplicationController
     end
   end
 
-  # PATCH/PUT /users/1
+  # PATCH/PUT /users
   def update
-    if @user.update(user_params)
-      render json: @user
+    puts @current_user.inspect
+    if @current_user.update(update_params)
+      render json: @current_user
     else
-      render json: @user.errors, status: :unprocessable_entity
+      render json: @current_user.errors, status: :unprocessable_entity
     end
   end
 
@@ -48,4 +50,8 @@ class UsersController < ApplicationController
     def user_params
       params.require(:user).permit(:email, :password, :age, :location, :gender, :interests)
     end
+
+    def update_params
+      params.require(:data).permit(:age, :location, :gender, :interests, :password)
+    end 
 end

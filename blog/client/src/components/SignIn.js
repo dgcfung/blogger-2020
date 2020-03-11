@@ -16,6 +16,8 @@ function SignIn(props){
             <hr/>
             <button>Sign In</button>
             <Link to="/login/signup">Sign Up</Link>
+
+            {/* props.history.push("/login"); */}
             
 
 

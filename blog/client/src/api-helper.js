@@ -5,7 +5,10 @@ const baseURL = 'http://localhost:3000'
 
 // user create, CRUD'
 const api= axios.create({
-    baseURL: baseURL
+    baseURL: baseURL,
+    headers: {
+      authorization: localStorage.getItem('authToken')
+    }
 })
 
 
@@ -40,12 +43,17 @@ export const loginUser = async (loginData) => {
   }
 
   const readAllUsers= async()=> {
-      const resp= await api.get('/users')
+      const resp = await api.get('/users')
   }
 
-  const updateUser= async(data)=>{
-      const resp= await api.put(`/users`,{user:data})
-      return resp.data
+  const updateUser= async(id,data)=>{
+      const resp= await api.put(`/users/${id}`,{data})
+      return resp
+  }
+
+  export const readUser = async(id) => {
+    const resp = await api.get(`/users/${id}`)
+    return resp.data
   }
 
   const destroyUser= async(id)=>{
@@ -55,7 +63,7 @@ export const loginUser = async (loginData) => {
 
   const createPost= async(id)=>{
       const resp= await api.post(`posts/${id}`)
-      return resp.data
+      return resp
   }
 
   const readAllUserPosts= async(id)=>{

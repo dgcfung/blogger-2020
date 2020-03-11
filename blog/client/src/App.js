@@ -1,5 +1,5 @@
 import React from 'react';
-import {Route} from 'react-router-dom'
+import {Route, withRouter} from 'react-router-dom'
 import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header'
@@ -28,7 +28,6 @@ import {
   updatePost,
   destroyPost
 } from './api-helper'
-
 
 
 class App extends React.Component {
@@ -94,6 +93,7 @@ handleSignIn = async(e)=>{
   e.preventDefault()
   let res = await loginUser(this.state.authFormData)
   console.log(res)
+  this.props.history.push(`/profile/${res.id}`)
   
 }
   
@@ -104,7 +104,7 @@ render () {
       <React.Fragment>
 
         {/* render routes here */}
-        <Header/>
+        <Header />
         <Route exact path="/" component={About}/>
         <Route exact path="/login/sign_in">
           <SignIn email={email} password={password} handleChange={this.handleChange} handleSubmit={this.handleSignIn}/>
@@ -115,14 +115,17 @@ render () {
         <Route exact path="/profile/:user_id" component={Profile}/>
         <Route exact path= "/profile/:user_id/edit" component={EditProfile}/>
         <Route exact path="/posts/:user_id/:post_id" component={Posts}/>
-        <Route exact path= "/posts/create/:user_id" component={CreateNewPost}/>
+        <Route exact path= "/posts/:user_id/create" component={CreateNewPost}/>
         <Route exact path="/posts/:user_id" component={UserPosts}/>
-        <Route exact path="/posts/:user_id" component= {Comment}/>
-        <Route exact path= "/posts/comments/create/:user_id" component= {CreateComment}/>
+
+        {/* reading both routes starting with /posts/:user_id */}
+        {/* <Route exact path="/posts/:user_id" component= {Comment}/> */}
+        {/* only render comments when you see a single post */}
+        <Route exact path= "/posts/comments/create" component= {CreateComment}/>
         <Footer/>
       </React.Fragment>
   );
 }
 }
 
-export default App
+export default withRouter(App)
