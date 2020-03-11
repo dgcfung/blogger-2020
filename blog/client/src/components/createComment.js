@@ -13,16 +13,4 @@ function CreateComment(props){
 
 export default CreateComment
 
-{/* <div className="create-form" >
-<h2>Create a new comment</h2>
-<form onSubmit={props.newTeacher}>
-  <p>Comment:</p>
- 
-  <input
-    type="text"
-    name="name"
-    value={props.createForm.name}
-    onChange={props.handleFormChange} />
-  <button>Submit</button>
-</form>
-</div > */}
+
