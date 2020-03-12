@@ -24,8 +24,11 @@ function EditProfile(props){
 
     const handleSubmit = async(e) => {
         e.preventDefault()
+        console.log(formValues)
         let res= await updateUser(id, formValues)
+        // console.log(res)
         if(res.status === 200){
+            console.log(res)
         props.history.push(`/profile/${id}`)
         }
 

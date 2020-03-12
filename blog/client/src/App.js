@@ -19,6 +19,7 @@ import CreateComment from './components/createComment'
 import {
   registerUser,
   loginUser,
+  createUser,
   readAllUsers,
   updateUser,
   destroyUser,
@@ -93,8 +94,9 @@ this.props.history.push(`/`)
 handleSignIn = async(e)=>{
   e.preventDefault()
   // console.log('h')
+  console.log(this.state.authFormData)
   let res = await loginUser(this.state.authFormData)
-  console.log(res)
+  console.log(this.state.authFormData)
   this.setState({currentUser: res}) 
   
   // this.state.currentUser()
@@ -117,7 +119,7 @@ handleSignIn = async(e)=>{
 
 
 render () {
-  console.log(this.state.currentUser)
+  // console.log(this.state.currentUser)
   let {email, password} =this.state.authFormData
   return (
       <React.Fragment>

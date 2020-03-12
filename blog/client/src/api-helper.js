@@ -48,7 +48,9 @@ const readAllUsers = async () => {
 
 const updateUser = async (id, data) => {
   const resp = await api.put(`/users/${id}`, { data })
+  console.log(resp)
   return resp
+
 }
 
 export const readUser = async (id) => {
@@ -95,6 +97,7 @@ const destroyPost = async (id) => {
 
 
 export {
+  createUser,
   readAllUsers,
   updateUser,
   destroyUser,

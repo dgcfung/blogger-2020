@@ -54,3 +54,11 @@
 text-align: center;
 }
 
+/* mobile tablet compatible. */
+@media (max-width:768px){
+  .container{
+   display: flex;
+   justify-content: center;
+   flex-wrap: nowrap;
+  }
+}
