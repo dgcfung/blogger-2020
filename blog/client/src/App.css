@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: orange;
 }
 
 .App-logo {
@@ -40,13 +41,13 @@
 /* header */
 .App{
  
-    padding: 1px;
-    border: 1px solid #021a40;
+    padding: 1vw;
+    border: 1vw solid #021a40;
 
 }
 
 /* hamburger menu */
-.container { position: relative; display: flex; } .button { padding: 0; width: 50px; border: 0; background-color: #fff; color: #333; cursor: pointer; outline: 0; font-size: 40px; }
+.container { position: relative; display: flex; } .button { padding: 0; width: 50px; border: 0; background-color: #fff; color: #333; cursor: pointer; outline: 0; font-size: 40px; animation: App-logo-spin infinite 20s linear;}
 
 .dropdown { float: left; position: absolute; top: 100%; left: 0; width: 300px; z-index: 2; border: 1px solid rgba(0, 0, 0, 0.04); box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14); } ul { list-style: none; padding: 0; margin: 0; } li { padding: 8px 12px; } li:hover { background-color: rgba(0, 0, 0, 0.14); cursor: pointer; }
 
@@ -54,11 +55,23 @@
 text-align: center;
 }
 
+.footer{
+  background-color: orange;
+  padding: 1vw;
+    border: 1vw solid #021a40;
+}
+
 /* mobile tablet compatible. */
 @media (max-width:768px){
+  *{
+    background-color: orange;
+  }
   .container{
    display: flex;
    justify-content: center;
    flex-wrap: nowrap;
   }
+
+
+
 }
