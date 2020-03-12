@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 import {readUser, destroyUser } from '../api-helper'
 
 function Profile (props){
-    console.log(props)
+    // console.log(props)
     let id = props.match.params.user_id
 
     const [user, setUser] = useState({})
@@ -22,7 +22,7 @@ function Profile (props){
     //     const resp= await api.delete(`/users/${id}`)
     //     return resp.data
     // }
-    console.log(id)
+    // console.log(id)
 return(
     <div>
         

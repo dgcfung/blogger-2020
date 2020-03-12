@@ -23,6 +23,7 @@ import {
   updateUser,
   destroyUser,
   createPost,
+  createComment,
   readAllUserPosts,
   readAllPosts,
   updatePost,
@@ -92,19 +93,23 @@ this.props.history.push(`/`)
 handleSignIn = async(e)=>{
   e.preventDefault()
   let res = await loginUser(this.state.authFormData)
-  console.log(res)
+  // console.log(res)
+  this.setState({currentUser: res}) 
+  // this.state.currentUser()
   this.props.history.push(`/profile/${res.id}`)
   
 }
-  
+ 
+
 
 render () {
+  // console.log(this.state.currentUser)
   let {email, password} =this.state.authFormData
   return (
       <React.Fragment>
 
         {/* render routes here */}
-        <Header />
+        <Header currentUser= {this.state.currentUser}/>
         <Route exact path="/" component={About}/>
         <Route exact path="/login/sign_in">
           <SignIn email={email} password={password} handleChange={this.handleChange} handleSubmit={this.handleSignIn}/>

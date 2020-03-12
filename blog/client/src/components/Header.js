@@ -2,10 +2,18 @@ import React from 'react'
 import { NavLink, Link } from 'react-router-dom'
 
 class Header extends React.Component {
+  constructor(props){
+    super(props)
+    this.state={
+      currentUser: null
+    }
+  }
+
   container = React.createRef(); 
   state = {
     open: false,
   };
+
   handleButtonClick = () => {
     this.setState(state => {
       return {
@@ -33,8 +41,23 @@ handleClickOutside = event => {
 
 
   render() {
+    console.log(this.props.currentUser)
+    let email
+    if(this.props.currentUser != undefined){
+      email= this.props.currentUser.email
+       console.log(email)
+    }
+   
+  
     return (
+      // if name= true= then login status= "logged in"
+      
+      // <p>Welcome</p>
+     
+      
       <div className="App">
+
+
        
         <div className="container" ref= {this.container}>
        
@@ -43,6 +66,8 @@ handleClickOutside = event => {
             ☰
           </button>
           <h1 className = "blogger-header">Blogger 2020</h1>
+    
+          {/* <p>{email}< /p> */}
           {this.state.open && (
           <div class="dropdown" onClick={this.handleButtonClick}>
             <ul>
@@ -57,12 +82,12 @@ handleClickOutside = event => {
               <li>New Post</li>
               <li>Feed</li> */}
             </ul>
-            
+           
           </div>
-         
+       
            )}
           
-
+         
         </div> 
       </div>
     );

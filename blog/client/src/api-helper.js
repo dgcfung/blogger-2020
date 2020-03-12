@@ -66,6 +66,11 @@ const createPost = async (id, formValues) => {
   return res
 }
 
+export const createComment= async(id, formValues)=>{
+  const res = await api.post(`/users/${id}/comment`, {formValues})
+  return res
+}
+
 const readAllUserPosts = async (id) => {
   const resp = await api.get(`/posts/${id}`)
   return resp.data
