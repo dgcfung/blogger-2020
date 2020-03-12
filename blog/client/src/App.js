@@ -92,18 +92,32 @@ this.props.history.push(`/`)
 
 handleSignIn = async(e)=>{
   e.preventDefault()
+  // console.log('h')
   let res = await loginUser(this.state.authFormData)
-  // console.log(res)
+  console.log(res)
   this.setState({currentUser: res}) 
+  
   // this.state.currentUser()
   this.props.history.push(`/profile/${res.id}`)
-  
+   
 }
+
+// handleState = async(e)=>{
+//   e.preventDefault()
+//   // console.log('h')
+//   let res = await loginUser(this.state.authFormData)
+//   console.log(res)
+//   this.setState({currentUser: res}) 
+  
+//   // this.state.currentUser()
+//   this.props.history.push(`/profile/${res.id}`)
+   
+// }
  
 
 
 render () {
-  // console.log(this.state.currentUser)
+  console.log(this.state.currentUser)
   let {email, password} =this.state.authFormData
   return (
       <React.Fragment>

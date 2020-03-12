@@ -67,7 +67,7 @@ handleClickOutside = event => {
           </button>
           <h1 className = "blogger-header">Blogger 2020</h1>
     
-          {/* <p>{email}< /p> */}
+          <p>Welcome {email}!</p>
           {this.state.open && (
           <div class="dropdown" onClick={this.handleButtonClick}>
             <ul>
