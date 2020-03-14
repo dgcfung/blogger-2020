@@ -183,7 +183,7 @@ Low Priority Post MVP
 ## Project Change Log
 
 1. Props were passed into Header.js to display login status. 
-2. Adjustments were made to front end routes:
+2. Adjustments were made to front end route:
 <br>
 - PUT "/profile/:user_id/edit" to edit Profile
 
