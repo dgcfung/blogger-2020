@@ -184,6 +184,7 @@ Low Priority Post MVP
 
 1. Props were passed into Header.js to display login status. 
 2. Adjustments were made to front end routes:
+<br>
 PUT "/profile/:user_id/edit" to edit Profile
 POST "/posts/:user_id/:post_id to create new Post.
 
@@ -192,9 +193,11 @@ In order to display the login status I needed to pass props down from App.js to 
 
 The following code was added to the handleSignIn on App.js to set currentUser state:
 <br>
+<br>
 this.setState({currentUser: res}) 
 
 Next, I used conditional rendering to display the login status in Header.js:
+<br>
 <br>
  let email
     if (this.props.currentUser != undefined) {
