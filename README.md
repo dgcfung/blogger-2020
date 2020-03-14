@@ -40,8 +40,6 @@ The MVP goal of my site is to allow users to sign up & login. Once a user has cr
 
 ### MVP Libraries
 
-> Use this section to list all supporting libraries and dependencies, and their role in the project.
-
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
 |      React       |	Frontend |
@@ -70,8 +68,6 @@ The front end will also allow for full CRUD capabilities to create, update, and 
 
 
 #### Component Breakdown
-
-> Use this section to go into further depth regarding your components, including breaking down the components as stateless or stateful, and considering the passing of data between those components.
 
 |  Component   | State | Description                                                      |
 | :----------: | :---: | :--------------------------------------------------------------- |
@@ -138,8 +134,6 @@ My plan is to reach MVP by Wednesday March 10th
 
 ### Timeframes
 
-> Use this section to estimate the time necessary to build out the various sections of your project. You may include an additional priority matrix, if you desire.
-
 | Task                | Priority | Estimated Time | Actual Time |
 | ------------------- | :------: | :------------: | :---------: |
 | Setup Rails Backend including User Auth  |    H     |     20 hrs      |    TBD    |
@@ -188,14 +182,30 @@ Low Priority Post MVP
 
 ## Project Change Log
 
-> This section should be expanded and revised as you work on your project.
+1. Props were passed into Header.js to display login status. 
+2. Adjustments were made to front end routes:
+PUT "/profile/:user_id/edit" to edit Profile
+POST "/posts/:user_id/:post_id to create new Post.
 
 ## Code Showcase
+In order to display the login status I needed to pass props down from App.js to Header.js.
 
-> Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
+The following code was added to the handleSignIn on App.js to set currentUser state:
+this.setState({currentUser: res}) 
+
+Next, I used conditional rendering to display the login status in Header.js:
+ let email
+    if (this.props.currentUser != undefined) {
+      email = this.props.currentUser.email
+      console.log(email)
+    }
+    
+The variable was originally declared inside the conditional statement but needed to be moved outside the function to work properly. 
 
 ## Code Issues & Resolutions
 
-> Use this section to list of all major issues encountered and their resolution, if you'd like.
+After attempting deployment on Friday, March 13th at 4:00pm,  I found my previously working code crashing with a 431 Request Header Fields too large error. I believe this is partially related to changes made to my node modules during deployment and partly due an overly large API request occuring when multiple clicks were made to make a submission request on login (PUT,POST, LOGIN). 
+
+Based on my research, the error could be corrected by clearly out cookies in my browser and waiting a few hours. However, after not seeing results after clearly out cookies and deadline approaching, I decided to pull down an earlier version of my code. The previous version of code was functioning properly.
 
 ***
