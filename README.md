@@ -191,9 +191,11 @@ POST "/posts/:user_id/:post_id to create new Post.
 In order to display the login status I needed to pass props down from App.js to Header.js.
 
 The following code was added to the handleSignIn on App.js to set currentUser state:
+<br>
 this.setState({currentUser: res}) 
 
 Next, I used conditional rendering to display the login status in Header.js:
+<br>
  let email
     if (this.props.currentUser != undefined) {
       email = this.props.currentUser.email
