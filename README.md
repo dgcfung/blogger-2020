@@ -186,7 +186,6 @@ Low Priority Post MVP
 2. Adjustments were made to front end routes:
 <br>
 - PUT "/profile/:user_id/edit" to edit Profile
-- POST "/posts/:user_id/:post_id to create new Post.
 
 ## Code Showcase
 In order to display the login status I needed to pass props down from App.js to Header.js.
