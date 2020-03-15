@@ -210,6 +210,6 @@ The variable was originally declared inside the conditional statement but needed
 
 After attempting deployment on Friday, March 13th at 4:00pm,  I found my previously working code crashing with a 431 Request Header Fields too large error. I believe this is partially related to changes made to my node modules during deployment and partly due an overly large API request occuring when multiple clicks were made to make a submission request on login (PUT,POST, LOGIN). 
 
-Based on my research, the error could be corrected by clearly out cookies in my browser and waiting a few hours. However, after not seeing results after clearly out cookies and deadline approaching, I decided to pull down an earlier version of my code. The previous version of code was functioning properly.
+Based on my research, the error could be corrected by clearly out cookies in my browser and waiting a few hours. However, after not seeing results after clearing out cookies and deadline approaching, I decided to pull down an earlier version of my code. The previous version of code was functioning properly.
 
 ***
