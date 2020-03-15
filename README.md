@@ -1,5 +1,7 @@
 # Blogger-2020-app
 
+Note: This repo was corrupted after pull down of previous commit. I attempted the "git revert" command but was unsuccessful in restoring repo. I created a new repo to continue working. Refer to Link: https://git.generalassemb.ly/dgcfung/blogger-2020-backup
+
 ## Overview
 
 Blogger-2020 will be a re-designed modern version of the "Blogger" app. The Blogger-2020 app will include a build out back-end using Rails and allow Full CRUD functionality in adding users. The app will feature 1:m association between users & posts and 1:m association between posts & comments. Users will be able to make blog posts which post to their personal endpoint.
