@@ -1,6 +1,6 @@
 # Blogger-2020-app
 
-Note: This repo was corrupted after pull down of previous commit. I attempted the "git revert" command but was unsuccessful in restoring repo. I created a new repo to continue working. Link to new repot: https://git.generalassemb.ly/dgcfung/blogger-2020-backup
+Note: This repo was corrupted after pull down of previous commit. I attempted the "git revert" command but was unsuccessful in restoring repo. I created a new repo to continue working. Link to new repo: https://git.generalassemb.ly/dgcfung/blogger-2020-backup
 
 ## Overview
 
